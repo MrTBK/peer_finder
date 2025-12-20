@@ -42,31 +42,6 @@ Simulate student project partner matching using only:
 
 ---
 
-## 📁 Project Structure
-
-peer-finder/
-│
-├── index.html
-├── finder.html
-├── about.html
-│
-├── css/
-│   ├── style.css
-│   └── cards.css
-│
-├── js/
-│   ├── data.js
-│   ├── matcher.js
-│   └── ui.js
-│
-├── icons/
-│   ├── mail.png
-│   └── facebook.png
-│
-└── README.md
-
----
-
 ## 🚀 How to Run
 
 Open `index.html` or `finder.html` in your browser.
