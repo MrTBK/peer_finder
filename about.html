@@ -4,87 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Peer Finder</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">Peer Finder</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="finder.html">Matcher</a>
-            </div>
+        <a href="index.html" class="logo">Peer Finder</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="finder.html" class="nav-btn">Finder</a>
+            <a href="about.html" class="nav-btn">About</a>
+            <a href="credits.html" class="nav-btn">Credits</a>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="about-content">
-            <h1>About This Project</h1>
-            
-            <section class="about-section">
-                <h2>What is Peer Finder?</h2>
-                <p>Peer Finder is an offline simulation demonstrating how an intelligent peer-matching system could work for group projects in academic settings. It's designed as a concept tool to show the logic and user experience of matching students based on complementary skills and shared interests.</p>
-            </section>
+    <div class="container about">
+        <h1>About Peer Finder</h1>
+        
+        <section>
+            <h2>What is this?</h2>
+            <p>Peer Finder is a simple demo that shows how students can be matched for group projects based on their skills and interests.</p>
+        </section>
 
-            <section class="about-section">
-                <h2>How Does It Work?</h2>
-                <p>The system uses a simple but effective matching algorithm:</p>
-                <ul>
-                    <li><strong>Education Level Matching:</strong> Finds peers at compatible education levels</li>
-                    <li><strong>Skill Complementarity:</strong> Identifies students with different but complementary skills</li>
-                    <li><strong>Project Interest Alignment:</strong> Matches based on shared project type preferences</li>
-                    <li><strong>Weighted Scoring:</strong> Ranks matches based on multiple criteria</li>
-                </ul>
-            </section>
+        <section>
+            <h2>How does matching work?</h2>
+            <p>The system scores profiles based on:</p>
+            <ul>
+                <li><strong>Education Level:</strong> Must match your level</li>
+                <li><strong>Complementary Skills:</strong> Different skills that complement yours</li>
+                <li><strong>Shared Interests:</strong> Same project subject preferences</li>
+            </ul>
+        </section>
 
-            <section class="about-section">
-                <h2>Technical Architecture</h2>
-                <p>This project demonstrates professional web development practices:</p>
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <h3>Separation of Concerns</h3>
-                        <p>Data, logic, and UI are separated into distinct modules (data.js, matcher.js, ui.js)</p>
-                    </div>
-                    <div class="tech-item">
-                        <h3>Client-Side Logic</h3>
-                        <p>All matching happens in the browser using JavaScript - no backend needed</p>
-                    </div>
-                    <div class="tech-item">
-                        <h3>Responsive Design</h3>
-                        <p>Professional CSS with mobile-first approach and modern layout techniques</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about-section">
-                <h2>Important Note</h2>
-                <div class="info-box">
-                    <h3>This is a Simulation</h3>
-                    <p><strong>No real data is used.</strong> All student profiles are fictional and generated for demonstration purposes. No information is collected, stored, or transmitted. This project exists purely to demonstrate the concept of intelligent peer matching.</p>
-                    <p>In a real-world implementation, this system would connect to a database and include proper authentication, privacy controls, and data protection measures.</p>
-                </div>
-            </section>
-
-            <section class="about-section">
-                <h2>Educational Value</h2>
-                <p>This project demonstrates:</p>
-                <ul>
-                    <li>Algorithm design for matching and recommendation systems</li>
-                    <li>Clean code architecture with separated concerns</li>
-                    <li>User interface design for filtering and displaying results</li>
-                    <li>Client-side application development without backend dependencies</li>
-                </ul>
-            </section>
-
-            <div class="cta-section">
-                <a href="finder.html" class="btn btn-primary">Try the Matcher</a>
-                <a href="index.html" class="btn btn-secondary">Back to Home</a>
+        <section>
+            <h2>Matching Logic Explained</h2>
+            <p>Our algorithm prioritizes <strong>complementary skills</strong> over shared skills. Here's why:</p>
+            <div class="info-box">
+                <h3>Design Philosophy</h3>
+                <p><strong>Complementary Skills = 7 points each</strong></p>
+                <p><strong>Shared Skills = 5 points each</strong></p>
+                <p>A good project partner is someone who <em>complements</em> you more than mirrors you. When team members have different but compatible skills, they create a more balanced and capable team. For example, if you're strong in programming, partnering with someone skilled in design or marketing creates a more complete project team.</p>
+                <p>This isn't an accident—it's a deliberate design choice to encourage diverse, well-rounded collaborations.</p>
             </div>
+        </section>
+
+        <section>
+            <h2>Technologies Used</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Client-side matching algorithm</li>
+                <li>No backend required</li>
+            </ul>
+        </section>
+
+        <div class="info-box">
+            <h3>Educational Demo</h3>
+            <p>All profiles are created for demonstration purposes. No real personal data is used.</p>
+        </div>
+
+        <div class="buttons">
+            <a href="finder.html" class="btn-primary">Try It Out</a>
+            <a href="index.html" class="btn-secondary">Back Home</a>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Peer Finder - Educational Simulation Project</p>
+        <p>&copy; 2025 Peer Finder</p>
     </footer>
 </body>
 </html>

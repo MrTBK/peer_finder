@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Your Match - Peer Finder</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cards.css">
+    <title>Find Matches - Peer Finder</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">Peer Finder</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-            </div>
+        <a href="index.html" class="logo">Peer Finder</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="finder.html" class="nav-btn">Finder</a>
+            <a href="about.html" class="nav-btn">About</a>
+            <a href="credits.html" class="nav-btn">Credits</a>
         </div>
     </nav>
 
     <div class="container">
-        <div class="finder-header">
-            <h1>Find Your Project Partner</h1>
-            <p>Select your criteria to find matching peers</p>
-        </div>
+        <h1>Find Your Project Partner</h1>
+        <p class="subtitle">Select your criteria below</p>
 
         <div class="finder-layout">
-            <aside class="filters-panel">
+            <!-- Filters Sidebar -->
+            <aside class="filters">
                 <h2>Your Profile</h2>
                 
-                <div class="filter-group">
-                    <label for="level-select">Education Level</label>
-                    <select id="level-select" class="filter-select">
-                        <option value="">Select your level...</option>
+                <div class="form-group">
+                    <label>Education Level</label>
+                    <select id="level">
+                        <option value="">Select level...</option>
                         <option value="L1">L1</option>
                         <option value="L2BI">L2 BI</option>
                         <option value="L2BIS">L2 BIS</option>
@@ -39,58 +39,54 @@
                         <option value="L3BI">L3 BI</option>
                         <option value="L3BIS">L3 BIS</option>
                         <option value="L3EB">L3 EB</option>
-                        <option value="M1">M1 - Master Year 1</option>
-                        <option value="M2">M2 - Master Year 2</option>
+                        <option value="M1">M1</option>
+                        <option value="M2">M2</option>
                     </select>
                 </div>
 
-                <div class="filter-group">
-                    <label>Your Skills (select multiple)</label>
-                    <div class="checkbox-group" id="skills-checkboxes">
-                        <label class="checkbox-label"><input type="checkbox" value="Programation" class="skill-checkbox"><span> Programation</span></label>
-                        <label class="checkbox-label"><input type="checkbox" value="Design" class="skill-checkbox"><span> Design</span></label>
-                        <label class="checkbox-label"><input type="checkbox" value="Presenting" class="skill-checkbox"><span> Presenting</span></label>
-                        <label class="checkbox-label"><input type="checkbox" value="Marketing" class="skill-checkbox"><span> Marketing</span></label>
-                        <label class="checkbox-label"><input type="checkbox" value="Math" class="skill-checkbox"><span> Math</span></label>
-                        <label class="checkbox-label"><input type="checkbox" value="Dev" class="skill-checkbox"><span> Dev</span></label>
-                        <label class="checkbox-label"><input type="checkbox" value="Research" class="skill-checkbox"><span> Research</span></label>
-                        <label class="checkbox-label"><input type="checkbox" value="Statistiques" class="skill-checkbox"><span> Statistiques</span></label>
-                        <label class="checkbox-label"><input type="checkbox" value="Bases de Données" class="skill-checkbox"><span> Bases de Données</span></label>
+                <div class="form-group">
+                    <label>Your Skills</label>
+                    <div class="checkbox-list" id="skills">
+                        <label><input type="checkbox" value="Programation"> Programation</label>
+                        <label><input type="checkbox" value="Design"> Design</label>
+                        <label><input type="checkbox" value="Presenting"> Presenting</label>
+                        <label><input type="checkbox" value="Marketing"> Marketing</label>
+                        <label><input type="checkbox" value="Math"> Math</label>
+                        <label><input type="checkbox" value="Dev"> Dev</label>
+                        <label><input type="checkbox" value="Research"> Research</label>
+                        <label><input type="checkbox" value="Statistiques"> Statistiques</label>
+                        <label><input type="checkbox" value="Bases de Données"> Bases de Données</label>
                     </div>
                 </div>
 
-                <div class="filter-group">
-                    <label for="project-type">Project Subject</label>
-                    <select id="project-type" class="filter-select">
-                        <option value="">Any project subject...</option>
+                <div class="form-group">
+                    <label>Project Subject</label>
+                    <select id="project">
+                        <option value="">Any subject...</option>
                         <option value="Web Programming 1">Web Programming 1</option>
                         <option value="OOP Programming">OOP Programming</option>
                         <option value="Marketing Digital">Marketing Digital</option>
                         <option value="Économie Numérique">Économie Numérique</option>
                         <option value="Éthique et lois des IT">Éthique et lois des IT</option>
-                        <option value="Projet Professionnel Personnel (PPP)">Projet Professionnel Personnel (PPP)</option>
-                        <option value="Social Media & Community Management">Social Media & Community Management</option>
-                        <option value="Conception et Bases de Données">Conception et Bases de Données</option>
-                        <option value="Conception OO des Systèmes d’Information">Conception OO des Systèmes d’Information</option>
-                        <option value="Bases de Données">Bases de Données</option>
+                        <option value="Projet Professionnel Personnel (PPP)">PPP</option>
+                        <option value="Social Media & Community Management">Social Media</option>
+                        <option value="Conception et Bases de Données">Conception et BD</option>
                         <option value="Statistiques Inférentielles">Statistiques Inférentielles</option>
-                        <option value="Fondements de l’IA">Fondements de l’IA</option>
+                        <option value="Fondements de l'IA">Fondements de l'IA</option>
                     </select>
                 </div>
 
-                <button id="find-matches" class="btn btn-primary">Find Matches</button>
-                <button id="reset-filters" class="btn btn-secondary">Reset</button>
+                <button id="find-btn" class="btn-primary">Find Matches</button>
+                <button id="reset-btn" class="btn-secondary">Reset</button>
             </aside>
 
-            <main class="results-panel">
-                <div id="results-header">
-                    <h2>Matching Profiles</h2>
-                    <p class="results-count" id="results-count">Select your criteria to see matches</p>
-                </div>
-                <div id="profiles-container" class="profiles-grid">
-                    <div class="empty-state">
-                        <div class="empty-icon">🔍</div>
-                        <p>Use the filters on the left to find your perfect project partner</p>
+            <!-- Results Area -->
+            <main class="results">
+                <h2>Results</h2>
+                <p id="count">Select your criteria to see matches</p>
+                <div id="profiles">
+                    <div class="empty">
+                        <p>👈 Use the filters to find partners</p>
                     </div>
                 </div>
             </main>
@@ -98,7 +94,8 @@
     </div>
 
     <script src="js/data.js"></script>
-    <script src="js/matcher.js"></script>
+    <script src="js/matching.js"></script>
     <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
