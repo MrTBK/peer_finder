@@ -47,7 +47,7 @@ const students = [
         skills: ["Marketing", "Content", "Communication"],
         projectInterest: "Digital Branding",
         email: "mortadha@example.com",
-        facebook: "https://www.facebook.com/wissal.jaafer.3"
+        facebook: "https://www.facebook.com/yakoubi.mortadha"
     },
     {
         id: 4,
@@ -57,7 +57,7 @@ const students = [
         skills: ["Statistics", "Analysis", "Research"],
         projectInterest: "Market Analysis",
         email: "ridha@example.com",
-        facebook: "https://www.facebook.com/wissal.jaafer.3"
+        facebook: "https://www.facebook.com/mohamed.ridha.melouki.2025"
     },
     {
         id: 5,
@@ -107,7 +107,7 @@ const students = [
         skills: ["Marketing", "Analysis", "Presenting"],
         projectInterest: "Market Research",
         email: "aziza@example.com",
-        facebook: "https://www.facebook.com/wissal.jaafer.3"
+        facebook: "https://www.facebook.com/aziza"
     },
     {
         id: 10,
@@ -177,7 +177,7 @@ const students = [
         skills: ["Algorithms", "Problem Solving", "Dev"],
         projectInterest: "Advanced Programming",
         email: "yahya@example.com",
-        facebook: "https://www.facebook.com/amine.harbaoui.988"
+        facebook: "https://www.facebook.com/MOlizeR26"
     },
     {
         id: 17,
