@@ -1,44 +1,44 @@
 # Peer Finder – Offline Project Partner Matcher
 
-Peer Finder is a front-end web application designed as a **concept simulation** to help students find suitable project partners based on their **education level**, **skills**, and **project subject**.
+**Peer Finder** is a front-end web application **concept simulation** designed to help students find suitable project partners based on their **education level**, **skills**, and **project interests**.
 
-This project is intentionally **offline and static**:
-- No accounts
-- No passwords
-- No backend
-- No database
+This project is intentionally **offline and static**:  
+- No accounts  
+- No passwords  
+- No backend  
+- No database  
 
-All profiles are **fictional placeholders**, used only to demonstrate logic, UI design, and JavaScript interactions.
+All profiles are **fictional placeholders**, used solely to demonstrate logic, UI design, and JavaScript interactions.
 
 ---
 
 ## 🎯 Objective
 
-Simulate student project partner matching using only:
-- HTML
-- CSS
-- JavaScript
+Simulate student project partner matching using only:  
+- HTML  
+- CSS  
+- JavaScript  
 
 ---
 
 ## ✨ Features
 
-- Education level selection
-- Multiple skill selection
-- Project subject selection
-- Matching score system
-- Animated profile cards
-- Click-to-open contact overlay
-- Email & Facebook contact icons
-- Fully responsive design
+- Select education level  
+- Choose multiple skills  
+- Select project subject  
+- Matching score calculation  
+- Animated profile cards  
+- Click-to-open contact overlay  
+- Email & Facebook contact icons  
+- Fully responsive design  
 
 ---
 
 ## 🛠️ Technologies
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
+- HTML5  
+- CSS3  
+- JavaScript  
 
 ---
 
@@ -48,7 +48,14 @@ Open `index.html` or `finder.html` in your browser.
 
 ---
 
+## 🔗 GitHub Repository
+
+You can find the full project on GitHub:  
+[Peer Finder Repository](https://github.com/MrTBK/peer_finder)
+
+---
+
 ## 🎓 Academic Disclaimer
 
-This project is for educational and exam purposes only.
-All profiles and contacts are fictional.
+This project is for educational and exam purposes only.  
+All profiles and contact information are fictional.
